@@ -11,16 +11,3 @@ document.addEventListener('DOMContentLoaded', () => {
         popupContainer.classList.remove('show');
     });
 });
-
-// Making a blur when click the read instructions button
-
-var hideButton = document.getElementById('myButton');
-hideButton.addEventListener('click', function() {
-  var boxes = document.querySelectorAll('.box');
-  for (var i = 0; i < boxes.length; i++) {
-    // use a condition to target only the first and third .box elements
-    if (i === 0 || i === 2) {
-      boxes[i].style.display = 'none';
-    }
-  }
-});
