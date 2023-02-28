@@ -8,7 +8,7 @@
     --primary-button-background: #858984;
     background-color: var(--primary-background-color);
     color: var(--primary-font-color);
-    font-size: 62,5%;
+    font-size: 62.5%;
 }
 
 /* Apply some common styles to all elements on the page */
@@ -31,7 +31,7 @@ h4 {
 h1 {
     font-size: 5.4rem;
     margin-bottom: 5rem;
-    
+
 }
 
 h2 {
@@ -55,10 +55,9 @@ h3 {
     align-items: center;
     max-width: 75rem;
     margin: 0 auto;
-    border: 1rem, solid, red;
 }
 
-.container > * {
+.container>* {
     width: 100%;
     text-align: center;
 }
@@ -83,4 +82,92 @@ h3 {
 
 .hidden {
     display: none;
+}
+
+.btn {
+    appearance: none;
+    background-color: var(--primary-button-background);
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #938277 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: var(--primary-background-color);
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+.btn:active {
+    transform: scale(1.025);
+}
+
+.btn-info {
+    font-size: 1.7rem;
+    margin: 0rem 0rem 4rem 0rem;
+}
+
+/* popup container */
+
+#popupContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background-color: var(--primary-font-color);
+    opacity: 0.8;
+    z-index: 9999;
+    max-width: 70rem;
+    overflow: auto;
+    scroll-snap-align: end;
+    scroll-snap-type: y mandatory;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+#popupContainer.show {
+    display: flex;
+    align-items: center;
+}
+
+#popupContainer>p {
+    color: var(--primary-background-color);
+    font-size: 1.5rem;
+    letter-spacing: 0.5;
+    line-height: 1.8;
+    text-align: left;
+    padding: 3rem;
+    max-height: 100%;
+    
+
 }
