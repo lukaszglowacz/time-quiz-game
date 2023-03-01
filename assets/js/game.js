@@ -59,8 +59,11 @@ startGame = () => {
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        // go to the end page
-        return window.location.assign('/end.html');
+        // stop the timer
+        clearInterval(timer);
+        
+        // go to the end page and pass the elapsed time as a parameter
+        return window.location.assign(`/end.html?time=${elapsedTime}`);
     }
     questionCounter++;
 
