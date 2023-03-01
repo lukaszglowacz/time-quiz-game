@@ -32,7 +32,6 @@ h4 {
 h1 {
     font-size: 5.4rem;
     margin-bottom: 5rem;
-
 }
 
 h2 {
@@ -177,16 +176,34 @@ h3 {
 /* GAME */
 
 .answer {
-    padding: 1rem;
+    margin-bottom: 0.5rem;
     display: flex;
     flex-direction: row;
     cursor: pointer;
+    width: 100%;
+    font-size: 1.8rem;
+    background-color: #fff;
 
 }
+.answer:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 var(--primary-button-background);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
 
-.answer p {
-    border: 1px solid black;
-    font-size: 1.6rem;
 
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: var(--primary-font-color);
+    color: var(--primary-background-color);
+}
 
+.choice-text {
+    padding: 1.5rem;
+}
+
+#nextBtn {
+    width: 20%;
+    margin: 3rem auto;
 }
