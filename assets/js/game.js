@@ -1,6 +1,8 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressBarFull = document.getElementById("progressBarFull");
+const loader = document.getElementById("loader");
+const game = document.getElementById("game");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -9,35 +11,38 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 
-let questions = [{
-        question: "Do you know?",
-        choice1: "Yeah",
-        choice2: "Nope",
-        choice3: "What?",
-        choice4: "No",
-        answer: 3
-    },
-    {
-        question: "Do you feel?",
-        choice1: "Yeah",
-        choice2: "Nope",
-        choice3: "What?",
-        choice4: "No",
-        answer: 1
-    },
-    {
-        question: "Do you learn?",
-        choice1: "Yeah",
-        choice2: "Nope",
-        choice3: "What?",
-        choice4: "No",
-        answer: 1
-    }
-];
+let questions = [];
+
+fetch("https://opentdb.com/api.php?amount=10&type=multiple")
+  .then(res => res.json())
+  .then(loadedQuestions => {
+    console.log(loadedQuestions.results);
+
+    questions = loadedQuestions.results.map(loadedQuestion => {
+      const formattedQuestion = {
+        question: loadedQuestion.question.replace(/&quot;/g, '"')
+      };
+
+      const answerChoices = loadedQuestion.incorrect_answers.map(answer => answer.replace(/&quot;/g, '"'));
+  formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
+  answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer.replace(/&quot;/g, '"'));
+
+  answerChoices.forEach((choice, index) => {
+    formattedQuestion["choice" + (index + 1)] = choice;
+  });
+
+  return formattedQuestion;
+});
+    
+    startGame();
+  })
+  .catch(err => console.error(err));
+
+
 
 // Constans
 const INCORRECT_FAILED = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 10;
 
 let elapsedTime = 0;
 
@@ -46,6 +51,8 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
+    game.classList.remove("hidden");
+    loader.classList.add("hidden");
     // start the timer
     startTimer();
 };
@@ -59,7 +66,7 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
+    question.innerHTML = currentQuestion.question;
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];
@@ -112,6 +119,3 @@ startTimer = () => {
         timerElement.innerText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     }, 1000);
 };
-
-
-startGame();
