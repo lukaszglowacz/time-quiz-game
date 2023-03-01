@@ -36,8 +36,7 @@ let questions = [{
 ];
 
 // Constans
-const CORRECT_BONUS = 10;
-const INCORRECT_FAILED = 20;
+const INCORRECT_FAILED = 10;
 const MAX_QUESTIONS = 3;
 
 let elapsedTime = 0;
@@ -54,7 +53,7 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         // go to the end page
-        return window.location.assign('/index.html');
+        return window.location.assign('/end.html');
     }
     questionCounter++;
 
@@ -82,7 +81,7 @@ choices.forEach(choice => {
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
         if (classToApply == "incorrect") {
-            elapsedTime += 10;
+            elapsedTime += INCORRECT_FAILED;
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
