@@ -232,18 +232,22 @@ h3 {
     height: 4rem;
     border: 3px solid var(--primary-font-color);
     background-color: #fff;
-    width: 70%;
+    width: 50%;
     display: flex;
     margin: 5rem auto;
-
+    align-items: center;
+    padding: 0 0.3rem;
 }
 
 .spacebar-percent {
-    height: 3.6rem;
-    background-color: var(--primary-font-color);
+    height: 80%;
+    background-color: #FFC229;
     width: 0%;
-
+    border: none;
+    display: inherit;
+    align-items: center;
 }
+
 /* Loader */
 #loader {
     border: 16px solid white;
