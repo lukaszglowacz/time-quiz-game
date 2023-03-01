@@ -17,7 +17,7 @@ let questions = [{
         answer: 3
     },
     {
-        question: "Do you feel",
+        question: "Do you feel?",
         choice1: "Yeah",
         choice2: "Nope",
         choice3: "What?",
@@ -51,6 +51,11 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
+
+    choices.forEach (choice => {
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    } )
 };
 
 startGame();
