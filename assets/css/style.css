@@ -208,3 +208,38 @@ h3 {
     width: 20%;
     margin: 3rem auto;
 }
+
+.correct {
+    background-color: #135c11;
+    color: #e3dee1;
+}
+
+.incorrect {
+    background-color: #8e0909;
+    color: #e3dee1;
+}
+
+/* Stopwatch */
+.stopwatch {
+    font-size: 4rem;
+    padding: 3rem;
+    color:#FFC229;
+    font-weight: 600;
+}
+
+#spacebarContainer {
+    width: 20rem;
+    height: 4rem;
+    border: 3px solid var(--primary-font-color);
+    width: 70%;
+    display: flex;
+    margin: 5rem auto;
+
+}
+
+.spacebar-percent {
+    height: 3.6rem;
+    background-color: var(--primary-font-color);
+    width: 20%;
+
+}
