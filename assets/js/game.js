@@ -58,9 +58,6 @@ getNewQuestion = () => {
     }
     questionCounter++;
 
-    // Update progressbar
-    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
-
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -83,11 +80,19 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset["number"];
 
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
-        
+
+        if (classToApply == "incorrect") {
+            elapsedTime += 10;
+        }
+
         selectedChoice.parentElement.classList.add(classToApply);
 
-        setTimeout( () => {
+        setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
+
+            // Update progressbar
+            progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+
             getNewQuestion();
         }, 1000);
     });
