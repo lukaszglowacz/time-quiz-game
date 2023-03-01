@@ -231,6 +231,7 @@ h3 {
     width: 20rem;
     height: 4rem;
     border: 3px solid var(--primary-font-color);
+    background-color: #fff;
     width: 70%;
     display: flex;
     margin: 5rem auto;
@@ -240,6 +241,6 @@ h3 {
 .spacebar-percent {
     height: 3.6rem;
     background-color: var(--primary-font-color);
-    width: 20%;
+    width: 0%;
 
 }
