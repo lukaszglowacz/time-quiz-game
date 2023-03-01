@@ -11,3 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         popupContainer.classList.remove('show');
     });
 });
+
+// Game page
+
+const questionEl = document.getElementById("question");
+const choices = document.getElementsByClassName("choice-text");
+console.log(choices);
