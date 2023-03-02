@@ -384,10 +384,3 @@ h3 {
         padding: 10rem;
   }
 }
-
-@media screen and (orientation: landscape) {
-    html {
-      max-width: 2500px;
-      overflow-x: hidden;
-    }
-  }
