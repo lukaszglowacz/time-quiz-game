@@ -3,6 +3,9 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
+const progressTimerContainer = document.getElementById("progress-timer-container");
+const progressBarContainer = document.getElementById("progress-bar-container");
+const timerContainer = document.getElementById("timer-container");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -14,29 +17,29 @@ let availableQuestions = [];
 let questions = [];
 
 fetch("https://opentdb.com/api.php?amount=10&type=multiple")
-  .then(res => res.json())
-  .then(loadedQuestions => {
-    console.log(loadedQuestions.results);
+    .then(res => res.json())
+    .then(loadedQuestions => {
+        console.log(loadedQuestions.results);
 
-    questions = loadedQuestions.results.map(loadedQuestion => {
-      const formattedQuestion = {
-        question: loadedQuestion.question.replace(/&quot;/g, '"')
-      };
+        questions = loadedQuestions.results.map(loadedQuestion => {
+            const formattedQuestion = {
+                question: loadedQuestion.question.replace(/&quot;/g, '"')
+            };
 
-      const answerChoices = loadedQuestion.incorrect_answers.map(answer => answer.replace(/&quot;/g, '"'));
-  formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
-  answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer.replace(/&quot;/g, '"'));
+            const answerChoices = loadedQuestion.incorrect_answers.map(answer => answer.replace(/&quot;/g, '"'));
+            formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
+            answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer.replace(/&quot;/g, '"'));
 
-  answerChoices.forEach((choice, index) => {
-    formattedQuestion["choice" + (index + 1)] = choice;
-  });
+            answerChoices.forEach((choice, index) => {
+                formattedQuestion["choice" + (index + 1)] = choice;
+            });
 
-  return formattedQuestion;
-});
-    
-    startGame();
-  })
-  .catch(err => console.error(err));
+            return formattedQuestion;
+        });
+
+        startGame();
+    })
+    .catch(err => console.error(err));
 
 
 
@@ -61,7 +64,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         // stop the timer
         clearInterval(timer);
-        
+
         // go to the end page and pass the elapsed time as a parameter
         return window.location.assign(`/end.html?time=${elapsedTime}`);
     }
@@ -108,8 +111,6 @@ choices.forEach(choice => {
 });
 
 //stopwatch function
-
-
 
 startTimer = () => {
     const timerElement = document.getElementById("timer");
