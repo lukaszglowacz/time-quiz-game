@@ -124,6 +124,11 @@ h3 {
     transform: scale(1.025);
 }
 
+.btn:focus {
+    outline: 2px solid blue;
+    box-shadow: none;
+}
+
 .btn-info {
     font-size: 1.7rem;
     margin: 0rem 0rem 4rem 0rem;
