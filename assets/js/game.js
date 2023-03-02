@@ -106,6 +106,7 @@ choices.forEach(choice => {
             progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
             getNewQuestion();
+            selectedChoice.blur(); // remove focus from the selected choice
         }, 1000);
     });
 });
