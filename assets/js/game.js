@@ -77,6 +77,7 @@ getNewQuestion = () => {
     choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
+        
     });
 
     availableQuestions.splice(questionIndex, 1);
@@ -106,7 +107,6 @@ choices.forEach(choice => {
             progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
             getNewQuestion();
-            selectedChoice.blur(); // remove focus from the selected choice
         }, 1000);
     });
 });

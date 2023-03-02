@@ -124,11 +124,6 @@ h3 {
     transform: scale(1.025);
 }
 
-.btn:focus {
-    outline: 2px solid blue;
-    box-shadow: none;
-}
-
 .btn-info {
     font-size: 1.7rem;
     margin: 0rem 0rem 4rem 0rem;
@@ -195,11 +190,7 @@ h3 {
 
 .answer:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 var(--primary-button-background);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
 }
-
 
 .choice-prefix {
     padding: 1.5rem 2.5rem;
