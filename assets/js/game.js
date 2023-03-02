@@ -66,7 +66,7 @@ getNewQuestion = () => {
         clearInterval(timer);
 
         // go to the end page and pass the elapsed time as a parameter
-        return window.location.assign(`/end.html?time=${elapsedTime}`);
+        return window.location.assign(`end.html?time=${elapsedTime}`);
     }
     questionCounter++;
 
