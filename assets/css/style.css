@@ -35,7 +35,8 @@ h1 {
 }
 
 h2 {
-    font-size: 4.2rem;
+    font-size: 3.9rem;
+    font-weight: 400;
     margin-bottom: 4rem;
 }
 
@@ -227,6 +228,7 @@ h3 {
     font-weight: 600;
 }
 
+ /* Spacebar */
 #spacebarContainer {
     width: 20rem;
     height: 4rem;
@@ -258,6 +260,7 @@ h3 {
     animation: spin 2s linear infinite;
 }
 
+/* Loader animation */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -266,3 +269,125 @@ h3 {
         transform: rotate(360deg);
     }
 }
+
+/* End page */
+
+.inline-header {
+    display: inline-block;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* Media queries */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    .answer {
+        font-size: 1.3rem;
+    }
+    .stopwatch {
+        font-size: 3.4rem;
+        padding: 2.4rem;
+        font-weight: 500;
+    }
+    
+     /* Spacebar */
+    #spacebarContainer {
+        width: 15rem;
+        height: 3rem;
+    }
+    
+    /* Loader */
+    #loader {
+        border: 8px solid white;
+        border-top: 8px solid #FFC229;
+        width: 6rem;
+        height: 6rem;
+    }
+    #end h1 {
+        font-size: 2.7rem;
+    }
+
+    #end h3 {
+        font-size: 2.4rem;
+    }
+
+    #end span {
+        font-weight: 500;
+        padding: 10rem;
+  }
+}
+
+@media screen and (orientation: landscape) {
+    html {
+      max-width: 768px;
+      overflow-x: hidden;
+    }
+  }
