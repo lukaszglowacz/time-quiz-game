@@ -9,13 +9,6 @@
     <meta name="keywords" content="quiz app, game, questions and answers, time">
     <title>Time Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-        // Lock screen orientation to portrait mode
-        if (screen.orientation.lock) {
-          screen.orientation.lock("portrait");
-        }
-      </script>
-
 
 </head>
 
@@ -25,26 +18,32 @@
     <div class="container">
         <div id="loader"></div>
         <div id="game" class="justify-center flex-column hidden">
-            <div id="timer" class="stopwatch">00:00</div>
-            <h2 id="question">Ask me a question!</h2>
-            <div class="answer">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice 1</p>
-            </div>
-            <div class="answer">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" data-number="2">Choice 2</p>
-            </div>
-            <div class="answer">
-                <p class="choice-prefix">C</p>
-                <p class="choice-text" data-number="3">Choice 3</p>
-            </div>
-            <div class="answer">
-                <p class="choice-prefix">D</p>
-                <p class="choice-text" data-number="4">Choice 4</p>
+            <div class="landscape">
+                <div class="lanscape-left">
+                    <div id="timer" class="stopwatch">00:00</div>
+                    <h2 id="question">Ask me a question!</h2>
+                </div>
+                <div class="landscape-right">
+                    <div class="answer">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text" data-number="1">Choice 1</p>
+                    </div>
+                    <div class="answer">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text" data-number="2">Choice 2</p>
+                    </div>
+                    <div class="answer">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text" data-number="3">Choice 3</p>
+                    </div>
+                    <div class="answer">
+                        <p class="choice-prefix">D</p>
+                        <p class="choice-text" data-number="4">Choice 4</p>
+                    </div>
+                </div>
             </div>
             <div id="spacebarContainer">
-                <div id="progressBarFull"class="spacebar-percent"></div>
+                <div id="progressBarFull" class="spacebar-percent"></div>
             </div>
 
         </div>

@@ -163,7 +163,7 @@ h3 {
     align-items: center;
 }
 
-#popupContainer > p {
+#popupContainer>p {
     color: var(--primary-background-color);
     font-size: 1.5rem;
     letter-spacing: 0.5;
@@ -186,6 +186,7 @@ h3 {
     background-color: #fff;
 
 }
+
 .answer:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 var(--primary-button-background);
@@ -224,11 +225,11 @@ h3 {
 .stopwatch {
     font-size: 4rem;
     padding: 3rem;
-    color:#FFC229;
+    color: #FFC229;
     font-weight: 600;
 }
 
- /* Spacebar */
+/* Spacebar */
 #spacebarContainer {
     width: 20rem;
     height: 4rem;
@@ -265,6 +266,7 @@ h3 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -280,90 +282,56 @@ h3 {
     text-align: center;
 }
 
-
-
 /* Media queries */
-
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    
-    
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .landscape {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lanscape-left {
+        order: 1;
+        width: 30%;
+        justify-content: center;
+    }
+
+    .landscape-right {
+        order: 2;
+        width: 70%;
+        margin-left: 1rem;
+        justify-content: center;
+    }
+
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
+
     .answer {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
+
     .stopwatch {
-        font-size: 3.4rem;
-        padding: 2.4rem;
+        font-size: 4rem;
+        padding: 1rem;
         font-weight: 500;
     }
-    
-     /* Spacebar */
+
+    /* Spacebar */
     #spacebarContainer {
         width: 15rem;
         height: 3rem;
+        margin: 2rem auto;
     }
-    
+
     /* Loader */
     #loader {
         border: 8px solid white;
@@ -371,6 +339,7 @@ h3 {
         width: 6rem;
         height: 6rem;
     }
+
     #end h1 {
         font-size: 2.7rem;
     }
@@ -382,5 +351,138 @@ h3 {
     #end span {
         font-weight: 500;
         padding: 10rem;
-  }
+    }
+
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .landscape {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lanscape-left {
+        order: 1;
+        width: 30%;
+        justify-content: center;
+    }
+
+    .landscape-right {
+        order: 2;
+        width: 70%;
+        margin-left: 1rem;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .answer {
+        font-size: 1.2rem;
+    }
+
+    .stopwatch {
+        font-size: 3rem;
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    /* Spacebar */
+    #spacebarContainer {
+        width: 15rem;
+        height: 3rem;
+        margin: 2rem auto;
+    }
+
+    /* Loader */
+    #loader {
+        border: 8px solid white;
+        border-top: 8px solid #FFC229;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #end h1 {
+        font-size: 2.7rem;
+    }
+
+    #end h3 {
+        font-size: 2.4rem;
+    }
+
+    #end span {
+        font-weight: 500;
+        padding: 10rem;
+    }
+
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .answer {
+        font-size: 1.5rem;
+    }
+
+    .stopwatch {
+        font-size: 3.4rem;
+        padding: 2.4rem;
+        font-weight: 500;
+    }
+
+    /* Spacebar */
+    #spacebarContainer {
+        width: 15rem;
+        height: 3rem;
+        margin: 2rem auto;
+    }
+
+    /* Loader */
+    #loader {
+        border: 8px solid white;
+        border-top: 8px solid #FFC229;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #end h1 {
+        font-size: 2.7rem;
+    }
+
+    #end h3 {
+        font-size: 2.4rem;
+    }
+
+    #end span {
+        font-weight: 500;
+        padding: 10rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+    }
 }
