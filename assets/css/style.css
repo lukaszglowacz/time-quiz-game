@@ -192,6 +192,10 @@ h3 {
     cursor: pointer;
 }
 
+.answer:active {
+    background-color: transparent;
+  }
+
 .choice-prefix {
     padding: 1.5rem 2.5rem;
     background-color: var(--primary-font-color);
@@ -488,3 +492,9 @@ h3 {
         font-size: 1.3rem;
     }
 }
+
+@media (max-width: 767px) {
+    a:active {
+      background-color: transparent;
+    }
+  }
