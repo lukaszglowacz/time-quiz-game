@@ -1,23 +1,21 @@
-# Northern Lights Photo Trip Project
-Northern Lights Photo Trip is a site that helps people find good places to photograph the Northern Lights in Sweden. Northern Lights Photo Trip allows people to check when and where aurora photography enthusiasts meet and join a group for more relevant information.
+# The Time Quiz Game
+The Time Quiz Game is a fast-paced trivia game with 3000+ questions from different categories and with different difficulty level. Answer quickly and accurately to beat your high score or challenge friends. No references are allowed. Each correct answer moves you forward, while wrong answers add 20 seconds to your time. Test your knowledge now! We wish You luck!
 
-![responsive-main-image](https://user-images.githubusercontent.com/119242394/213183357-8dd7e511-ddbf-48e3-be33-f230b063ec67.jpg)
+![project-webframes](https://user-images.githubusercontent.com/119242394/222672863-d5e05bd4-96bc-421f-8185-ef546d24b020.png)
 
 ## User Experience (UX)
 ### Wireframes
 The wireframes for the website were produced in Balsamiq. There are frames for a full width display. The final site varies slightly from the wireframes due to developments that occured during the creation process.
 
-![index html](https://user-images.githubusercontent.com/119242394/213477947-4a1794aa-09aa-4ca9-b131-090ffb2109bf.png)
-![gallery html](https://user-images.githubusercontent.com/119242394/213477989-e3aa3ffc-b2cc-448c-8aa8-2829b9045e47.png)
-![form html](https://user-images.githubusercontent.com/119242394/213478005-898b9d8f-618b-48c1-8808-382bf0f56614.png)
-![registering html](https://user-images.githubusercontent.com/119242394/213478026-82b5037b-d82f-4337-b9be-6655846bf455.png)
-
-
+![Laptop Wireframe](https://user-images.githubusercontent.com/119242394/222660025-efbf2ba1-9dac-4826-a078-4dcb784c83b5.png)
+![iPad Wireframe](https://user-images.githubusercontent.com/119242394/222660092-be1fa231-4c58-40d7-84f4-fe50d033d1f8.png)
+![iPhone Wireframe](https://user-images.githubusercontent.com/119242394/222660114-b0b4fcb3-36ed-4a82-bd8c-53c58d8dcd01.png)
+![iPhone landscape Wireframe](https://user-images.githubusercontent.com/119242394/222660125-cb74a843-72c0-4aa1-a2fb-4abf3651b226.png)
 
 ### Design Choices
 - Typography
-  - The fonts chosen were 'Oswald' for the headings and 'Poppins' for the body text. They fall back to sans-serif respectively.
-  - Poppins is an easily readable font, and Oswald was selected via https://typ.io/search
+  - The fonts chosen were 'Frijole' for the headings, 'Averia Libre' for buttons and 'Montserrat' for the body text. They fall back to sans-serif respectively.
+  - Montserrat is an easily readable font, and Frijole with Averia Libre was selected via https://typ.io/search
   
 - Colour Scheme
   - The leading colour is a shade of green, which fits perfectly with the theme of the Northern Lights.
