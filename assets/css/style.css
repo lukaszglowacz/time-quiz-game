@@ -3,10 +3,11 @@
 
 /* Set some CSS variables that can be used throughout the page */
 :root {
-    --primary-background-color: #f5f5f3;
-    --primary-font-color: #544F56;
-    --primary-font-color-opacity: #544F56;
+    --primary-background-color: #EFF6F1;
+    --primary-font-color: #263C3E;
     --primary-button-background: #858984;
+    --secondary-button-background: #94ACA6;
+    --button-active: #FFC229;
     background-color: var(--primary-background-color);
     color: var(--primary-font-color);
     font-size: 62.5%;
@@ -115,7 +116,7 @@ h3 {
 }
 
 .btn:hover {
-    background-color: #FFC229;
+    background-color: var(--button-active);
     box-shadow: #FF6314 0 -6px 8px inset;
     transform: scale(1.125);
 }
@@ -127,6 +128,7 @@ h3 {
 .btn-info {
     font-size: 1.7rem;
     margin: 0rem 0rem 4rem 0rem;
+    background-color: var(--secondary-button-background);
 }
 
 /* Popup home page instruction container */
@@ -139,7 +141,7 @@ h3 {
     transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
-    background-color: var(--primary-font-color-opacity);
+    background-color: var(--primary-font-color);
     z-index: 9999;
     max-width: 70rem;
     overflow: auto;
@@ -226,7 +228,7 @@ h3 {
 .stopwatch {
     font-size: 4rem;
     padding: 3rem;
-    color: #FFC229;
+    color: var(--button-active);
     font-weight: 600;
 }
 
@@ -245,7 +247,7 @@ h3 {
 
 .spacebar-percent {
     height: 80%;
-    background-color: #FFC229;
+    background-color: var(--button-active);
     width: 0%;
     border: none;
     display: inherit;
@@ -256,7 +258,7 @@ h3 {
 #loader {
     border: 16px solid white;
     border-radius: 50%;
-    border-top: 16px solid #FFC229;
+    border-top: 16px solid var(--button-active);
     width: 12rem;
     height: 12rem;
     animation: spin 2s linear infinite;
@@ -341,7 +343,7 @@ h3 {
     /* Loader */
     #loader {
         border: 8px solid white;
-        border-top: 8px solid #FFC229;
+        border-top: 8px solid var(--button-active);
         width: 6rem;
         height: 6rem;
     }
@@ -412,7 +414,7 @@ h3 {
     /* Loader */
     #loader {
         border: 8px solid white;
-        border-top: 8px solid #FFC229;
+        border-top: 8px solid var(--button-active);
         width: 6rem;
         height: 6rem;
     }
@@ -463,7 +465,7 @@ h3 {
     /* Loader */
     #loader {
         border: 8px solid white;
-        border-top: 8px solid #FFC229;
+        border-top: 8px solid var(--button-active);
         width: 6rem;
         height: 6rem;
     }
@@ -492,9 +494,3 @@ h3 {
         font-size: 1.3rem;
     }
 }
-
-@media (max-width: 767px) {
-    a:active {
-      background-color: transparent;
-    }
-  }
