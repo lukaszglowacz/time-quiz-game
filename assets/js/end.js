@@ -1,3 +1,4 @@
+// Final score innerText function
 const urlParams = new URLSearchParams(window.location.search);
 const elapsedTime = urlParams.get('time');
 

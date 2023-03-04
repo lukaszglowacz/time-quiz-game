@@ -117,7 +117,7 @@ choices.forEach(choice => {
     });
 });
 
-//stopwatch functions
+// Stopwatch functions
 
 startTimer = () => {
     const timerElement = document.getElementById("timer");

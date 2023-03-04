@@ -1,4 +1,4 @@
-// Home page popup window
+// Home page hidden paragraph popup window
 document.addEventListener('DOMContentLoaded', () => {
     let myButton = document.querySelector('#myButton');
     let popupContainer = document.querySelector('#popupContainer');
