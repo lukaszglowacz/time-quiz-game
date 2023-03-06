@@ -18,10 +18,10 @@ The wireframes for the website were produced in Balsamiq. There are frames for a
   - Montserrat is an easily readable font, and Frijole with Averia Libre was selected via https://typ.io/search
   
 - Colour Scheme
-  - The leading colour is a shade of green, which fits perfectly with the theme of the Northern Lights.
+  - The leading colour is a shade of #EFF6F1, which fits perfectly with the main #263C3E font and #FFC229 button colour.
   - The colours were selected via http://colormind.io/
 
-![color-mind-picker](https://user-images.githubusercontent.com/119242394/213212242-8bf04506-5d24-4f88-94e6-2c68c1dcd471.jpg)
+
 
 ## Features
 The website consists of a landing page and three related pages. The landing page is the default loading page. Gallery and sign-up pages are all accessible primarily from the navigation menu. There is another page called registering that users only see when they submit a form query.
