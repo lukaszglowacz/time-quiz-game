@@ -84,39 +84,39 @@ The website consists of a landing page and two related pages. The landing page i
 
 The Northern Light Photo Trip website has been throughly tested. All the code has been run through the W3C HTML Validator and the W3C CSS Validator. No error were found after the last test.
 
-The HTML validator results for each page are below:
+- The HTML validator results for each page are below:
 
-- Home Page
-
-![no-errors-html](https://user-images.githubusercontent.com/119242394/213243744-d7515fe5-acb1-4bd5-8fd9-9614443d14e4.jpg)
-
-- Gallery Page
+  - Loading Page
 
 ![no-errors-html](https://user-images.githubusercontent.com/119242394/213243744-d7515fe5-acb1-4bd5-8fd9-9614443d14e4.jpg)
 
-- Sign Up Page
+  - Game Page
 
 ![no-errors-html](https://user-images.githubusercontent.com/119242394/213243744-d7515fe5-acb1-4bd5-8fd9-9614443d14e4.jpg)
 
-- Registering Page
+  - End Page
 
 ![no-errors-html](https://user-images.githubusercontent.com/119242394/213243744-d7515fe5-acb1-4bd5-8fd9-9614443d14e4.jpg)
 
-The CSS validator results are below:
+
+- The CSS validator results are below:
 
 ![no-errors-css](https://user-images.githubusercontent.com/119242394/213244593-53d7ec51-3a37-44fd-a6b4-c74edabcb237.jpg)
+
+- JSHint JS validator results are below:
+  - JSHint shows no significant errors in the code. The main problem that appeared in the code is the writing style issue, which says that the code has been written in ES6 functions and might work incorrectly on older devices that don't support JS (ES6+) language
 
 ### Responsiveness Test
 
 The responsive design tests were carried out manually with Google Chrome DevTools.
 
-|  | Mobile S - 320px | Mobile M - 375px | Mobile L - 425px | Tablet - 768px | Laptop - 1024px | Laptop L - 1440px | 4K - 2560px |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Render | passed | passed | passed | passed | passed | passed | passed |
-| Images | passed | passed | passed | passed | passed | passed | passed |
-| Links | passed | passed | passed | passed | passed | passed | passed |
+|  | Mobile S - 320px | Mobile M - 375px | Mobile L - 425px | Mobile - landscape mode | Tablet - 768px | Laptop - 1024px | Laptop L - 1440px | 4K - 2560px |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Render | passed | passed | passed | passed | passed | passed | passed | passed |
+| Images | passed | passed | passed | passed | passed | passed | passed | passed |
+| Links | passed | passed | passed | passed | passed | passed | passed | passed |
 
-All responsiveness tests were successful. The site is ready to work with devices of various widths. In addition, the site has been adapted to large screens above 1440px.
+All responsiveness tests were successful. The app is ready to work with devices of various widths. In addition, the app has been adapted to mobile landscape modes. That increases UX for landscape mode users.
 
 ### Browser Compatibility
 
@@ -144,21 +144,18 @@ Here are the desktop parameters of each repository page:
 
 - index.html
 
-![index](https://user-images.githubusercontent.com/119242394/213484817-e4602bfe-ac8a-42bf-924c-9c197c7668ac.jpg)
+![index_html](https://user-images.githubusercontent.com/119242394/223108652-83d1c060-eb8f-492d-99e0-54633e4b370a.png)
 
-- gallery.html
 
-![gallery](https://user-images.githubusercontent.com/119242394/213484873-34be0d36-f3dd-4d11-8752-f3d8f149d3ea.jpg)
+- game.html
 
-- form.html
+![game_html](https://user-images.githubusercontent.com/119242394/223108673-68408056-c07e-4c49-9eae-c1e286774a1c.png)
 
-![form](https://user-images.githubusercontent.com/119242394/213484907-112fa22f-937d-4ed5-9cd9-24135ec7b881.jpg)
 
-- registering.html
+- end.html
 
-![registering](https://user-images.githubusercontent.com/119242394/213484944-9c9fe4bb-cc09-472e-b874-f5e528c9823f.jpg)
+![end_html](https://user-images.githubusercontent.com/119242394/223108687-b72fdadd-531c-4ce4-9b32-fb63b4332a88.png)
 
-Despite the relatively good parameters, performance can be increased by serving images in next-gen formats like WebP and AVIF. The purpose of the site is also to download photos from the gallery if the user likes them. JPG and PNG image files are compatible with almost all devices available on the market.
 
 ## Deployment
 
@@ -169,7 +166,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 3. Under Source, select the branch to master, then click save.
 4. Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - https://lukaszglowacz.github.io/northern-lights-photography/index.html
+The live link can be found here - https://lukaszglowacz.github.io/time-quiz-game/
 
 ## Credits
 
