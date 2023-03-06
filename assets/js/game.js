@@ -4,9 +4,6 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
-const progressTimerContainer = document.getElementById("progress-timer-container");
-const progressBarContainer = document.getElementById("progress-bar-container");
-const timerContainer = document.getElementById("timer-container");
 
 // Define variables to track state
 let currentQuestion = {};
