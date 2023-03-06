@@ -64,19 +64,19 @@ The website consists of a landing page and two related pages. The landing page i
 
 ### Features Left to Implement
  
- - Later plans include rebuilding the website, including online payments with selecting a specific trip period.
- - There are also plans to launch an online store to sell products with the Northern Lights Photo Trip logo.
- - Add Error 404 page with back to home link.
+ - later plans include rebuilding the app and connecting it to the backend server to save scores online and make a ranking
+ - also rebuilding an app by adding questions level grades at the beginning of the game: easy, medium, hard
+ - add Error 404 page with back to the home link.
 
 ## Technology Used
  
- - HTML5 - provides the content and structure for the website.
- - CSS3 - provides the styling.
- - Balsamiq - used to create the wireframes.
- - Gitpod - used to deploy the website.
- - GitHub - used to host and edit the website.
- - Photoshop - used to edit images.
- - Canva - used to prepare and edit images.
+ - HTML5 - provides the content and structure for the website
+ - CSS3 - provides the styling
+ - JavaScript - implement all functions of the game
+ - Balsamiq - used to create the wireframes
+ - Gitpod - used to deploy the website
+ - GitHub - used to host and edit the website
+ - Canva - used to prepare the app's documentation
 
 ## Testing
 
