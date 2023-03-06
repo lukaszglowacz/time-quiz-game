@@ -1,5 +1,5 @@
 # The Time Quiz Game
-The Time Quiz Game is a fast-paced trivia game with 3000+ questions from different categories and with different difficulty level. Answer quickly and accurately to beat your high score or challenge friends. No references are allowed. Each correct answer moves you forward, while wrong answers add 20 seconds to your time. Test your knowledge now! We wish You luck!
+The Time Quiz Game is a fast-paced trivia game with 3000+ questions from different categories and with different difficulty level. Answer quickly and accurately to beat your high score or challenge friends. No references are allowed. Each correct answer moves you forward, while wrong answers add 10 seconds to your time. Test your knowledge now! We wish You luck!
 
 ![project-webframes](https://user-images.githubusercontent.com/119242394/222672863-d5e05bd4-96bc-421f-8185-ef546d24b020.png)
 
@@ -84,27 +84,30 @@ The website consists of a landing page and two related pages. The landing page i
 
 The Northern Light Photo Trip website has been throughly tested. All the code has been run through the W3C HTML Validator and the W3C CSS Validator. No error were found after the last test.
 
-- The HTML validator results for each page are below:
+The HTML validator results for each page are below:
 
-  - Loading Page
-
-![no-errors-html](https://user-images.githubusercontent.com/119242394/213243744-d7515fe5-acb1-4bd5-8fd9-9614443d14e4.jpg)
-
-  - Game Page
-
-![no-errors-html](https://user-images.githubusercontent.com/119242394/213243744-d7515fe5-acb1-4bd5-8fd9-9614443d14e4.jpg)
-
-  - End Page
+- Loading Page
 
 ![no-errors-html](https://user-images.githubusercontent.com/119242394/213243744-d7515fe5-acb1-4bd5-8fd9-9614443d14e4.jpg)
 
 
-- The CSS validator results are below:
+- Game Page
+
+![no-errors-html](https://user-images.githubusercontent.com/119242394/213243744-d7515fe5-acb1-4bd5-8fd9-9614443d14e4.jpg)
+
+
+- End Page
+
+![no-errors-html](https://user-images.githubusercontent.com/119242394/213243744-d7515fe5-acb1-4bd5-8fd9-9614443d14e4.jpg)
+
+
+The CSS validator results are below:
 
 ![no-errors-css](https://user-images.githubusercontent.com/119242394/213244593-53d7ec51-3a37-44fd-a6b4-c74edabcb237.jpg)
 
-- JSHint JS validator results are below:
-  - JSHint shows no significant errors in the code. The main problem that appeared in the code is the writing style issue, which says that the code has been written in ES6 functions and might work incorrectly on older devices that don't support JS (ES6+) language
+
+JSHint JS validator results are below:
+- JSHint shows no significant errors in the code. The main problem that appeared in the code is the writing style issue, which says that the code has been written in ES6 functions and might work incorrectly on older devices that don't support JS (ES6+) language
 
 ### Responsiveness Test
 
