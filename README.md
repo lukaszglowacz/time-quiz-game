@@ -21,71 +21,46 @@ The wireframes for the website were produced in Balsamiq. There are frames for a
   - The leading colour is a shade of #EFF6F1, which fits perfectly with the main #263C3E font and #FFC229 button colour.
   - The colours were selected via http://colormind.io/
 
-
+![Screenshot 2023-03-03 094406](https://user-images.githubusercontent.com/119242394/223087033-33842b6e-330a-43c5-9a92-473c408f9f34.png)
 
 ## Features
-The website consists of a landing page and three related pages. The landing page is the default loading page. Gallery and sign-up pages are all accessible primarily from the navigation menu. There is another page called registering that users only see when they submit a form query.
+The website consists of a landing page and two related pages. The landing page is the default loading page. A hidden paragraph on the landing page appears when the show instructions button is clicked and disappears when clicked again. The game and end page start automatically when the conditions are met. When the user presses the Start Game button, the game begins. When the user finishes the game, the end page appears. On the end page is a summary score text and a Play again button, which starts the game from the beginning.
 
 ### Existing Features
 
- - **Navigation Bar**
+ - **Read Instructions button**
+    - when the user clicks it, the button's color changes, and the instructions paragraph appears
+    - a paragraph is entirely smooth and scrollable on smaller devices
+    - user is known for the game instructions and preparation for the game
+    - when the user clicks it again, the paragraph disappears
     
-    - Featured on all four pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-    - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
-
- ![navbar-all-sites](https://user-images.githubusercontent.com/119242394/213186463-34834d9e-d33d-4d7d-b071-bf5763e6cd9b.jpg)
+ - **Start Game button**
+    - when the user clicks it, the button's color changes and the game starts
+    
+ - **Loader**
+    - appears between the loading page and the game page when the user clicks the Start Game button and the game page is not fully downloaded yet
+    - disappears when the game page is fully downloaded and the game is ready to play
  
-  - **The Landing Page Image**
+ - **Stopwatch**
+    - starts automatically when the game starts also
+    - when the user answers wrong, the stopwatch add automatically 10 seconds to the time score
     
-    - The landing includes a photograph with text overlay to allow the user to see what the website is about.
-    - This section introduces the user to Northern Lights Photo Trip with an eye catching animation to grab their attention.
-
-![main-section-image](https://user-images.githubusercontent.com/119242394/213187922-168f96f3-a94d-4c7f-8f0c-bb8ee5a0df00.jpg)
-
-  - **Club Northern Lights Section**
-    
-    - The club northern lights section allows users to see the four benefits of joining a group.
-    - Here the user sees why it is worth joining the club and taking pictures of the Northern Lights during ordinary trips of club members.
-
-![club-front-image](https://user-images.githubusercontent.com/119242394/213189610-ead9ad27-64a8-476a-aa46-d89770c4af65.jpg)
-  
-  - **Meetup Times section**
-    
-    - In this section, the user can see in which months we meet and in which cities in northern Sweden, along with information about the hotels where we stay.
-    - Meeting locations are unchanged unless there is a need to adapt to weather changes, and the user is informed about the update of places by e-mail.
-
-![time-meet-section](https://user-images.githubusercontent.com/119242394/213195007-4b05c855-0c08-4bce-a87c-558e2a6313be.jpg)
-
-  - **The Footer**
-    
-    - The footer section includes links to the relevant social media sites for Northern Lights Photo Trip. The links will open to a new tab to allow easy navigation for the user.
-    - The footer is valuable to the user as it encourages them to keep connected via social media.
-
-![footer-image](https://user-images.githubusercontent.com/119242394/213196408-b3a7488b-322a-4400-aafe-7c7097eb64ee.jpg)
-
-  - **Gallery**
-    
-    - The Gallery shows the user photos taken by members of the Northern Lights Photo Trip group during our previous meetings.
-    - The quality of the photos taken is to encourage new users to join the club and register.
-
-![gallery-image](https://user-images.githubusercontent.com/119242394/213197861-a2d04c57-dc9e-4fbb-aac3-654076d3d391.jpg)
-
-  - **Sign Up Page**
-    
-    - This page will allow the user to get signed up for Northern Lights Photo Run to start their northern lights journey with the community. The user is asked to submit their full name and email address. The user can select the month and place that best suits his preferences. This way, a list of participants of the club's subsequent trips is collected.
-    - The Sign Up Page is also prepared for larger screens over 1650px wide.
-
-![sign-up-form](https://user-images.githubusercontent.com/119242394/213199810-eb281f9e-0f02-49cb-87c2-1e3d2e16b09a.jpg)
-
-![sign-up-form-2](https://user-images.githubusercontent.com/119242394/213200679-13bb1a17-c102-411a-b758-5feb054c9b01.jpg)
-
-   - **Register Page**
-     
-     - The page is shown to everyone who has registered for Northern Lights Photo Trip.
-     - The website contains information on further steps to complete the selected trip.
-
-![after-sign-up-process](https://user-images.githubusercontent.com/119242394/213466365-63a0228f-f563-4f0a-b0ff-052d85222172.jpg)
-
+ - **Question and answers area**
+    - questions and answers area are connected to the trivia API
+    - trivia API has almost 5000 questions and answers database
+    - questions are downloaded from the easy category
+    - when the user clicks correct answer, clicked choice change the background color to  #135c11 and font color to #e3dee1
+    - when the user clicks incorrect answer, clicked choice changes the background color to #8e0909 and font color to #e3dee1 and automatically stopwatch adds 10 seconds to the time score
+ 
+ - **Progress bar**
+    - shows the graphic percent of the game
+    - the game is divided into ten questions, so every yellow piece of the progress bar that appears after answering the question corresponds to 10 percent
+ 
+ - **Score index**
+    - shows the user's time score described in seconds
+ 
+ - **Play Again button**
+    - when the user clicks it, the button's color changes, and the user is taken directly to the beginning of the game to the loading page
 
 ### Features Left to Implement
  
