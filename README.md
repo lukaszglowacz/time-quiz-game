@@ -82,7 +82,7 @@ The website consists of a landing page and two related pages. The landing page i
 
 ### Code Validation
 
-The Northern Light Photo Trip website has been throughly tested. All the code has been run through the W3C HTML Validator and the W3C CSS Validator. No error were found after the last test.
+The Time Quiz Game website has been throughly tested. All the code has been run through the W3C HTML Validator, the W3C CSS Validator and JSHint JS validator. No error were found after the last test.
 
 The HTML validator results for each page are below:
 
